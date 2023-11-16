@@ -1,0 +1,305 @@
+<style>
+    
+@media print {
+
+    body {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #f2f2f2;
+    }
+}
+
+@media screen and (min-width:480px) {
+    h1{
+        font-size:18px;
+    }
+    p{
+        font-size:12px;
+    }
+    .banner {
+        height: 150px;
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    h1{
+        font-size:24px;
+    }
+    p{
+        font-size:15px;
+    }
+
+    .banner {
+        height: 200px;
+    }
+    
+}
+    html {
+        background-color: #000000;
+        background-image: url("img/f-banner.jpg");
+        opacity: 95%;
+        background-repeat:auto;
+        background-size: cover;
+    }
+
+    body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+
+
+
+    header {
+        color: white;
+        width: 100%;
+        height: 60px;
+    }
+
+    nav {
+        display: flex;
+        flex-basis: 100%;
+        margin: 1rem;
+        background-color: #243c2d;
+        border: #ffffff16 5px solid;
+        }
+  
+    nav a {
+        color: white;
+        background-color: #243c2d;
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 10px;
+        text-align: center;
+        flex-grow: 1;
+    }
+    nav a:hover {
+        color: #243c2d;
+        background-color: #f2f2f2;
+    }
+
+
+    /*main {
+       align-content: center;
+    }*/
+
+    footer {
+        text-align: center;
+        background-color: #000000aa;
+        color: white;
+        padding: 50px;
+        height: 40px;
+        align-content: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    p{
+        font-size:16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    /*.flex-container {
+        display: flex;
+        flex-direction: row;
+        margin-right: 100px;
+        margin-left: 100px;
+        align-self: center;
+
+    }
+
+    .item {
+        flex: 1;
+        flex-basis: 100%;
+        background: lightgrey;
+        border: grey 1px solid;
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+        width: 300px;
+        height: 300px;
+        align-items: center;
+
+    }*/
+    .page-header{
+        text-align: center;
+        font-weight:bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+    .page-header h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        text-shadow: 4px 4px 5px #15151564 ;
+    }
+
+    .page-description {
+        margin: 0rem 10rem 3rem 10rem ;
+        background-color: rgba(255, 255, 255, 0.682);
+        padding:1rem 1.5rem 1rem 1.5rem;
+        border: #ffffff 1px solid;
+        border-radius: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        line-height: 1.5rem;
+    }
+
+    .container {
+        max-width: 100%;
+        padding-inline: 2rem;
+        background-color: rgb(28, 27, 30);
+        margin-bottom: 5rem;
+    }
+
+    .stacked {
+        display:grid;
+    }
+
+    .stacked > * {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .product_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        padding:4em;
+        gap: .5rem;
+        text-align: center;
+    }
+
+    .item {
+        border: 3px solid rgb(18, 26, 26);
+        background-color: #151515 ;
+        overflow:clip;
+        aspect-ratio: 1 / 1;
+    }
+
+    .card_img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .card_content {
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.581);
+        align-self: end;
+        margin: .5rem;
+        padding: .5rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .card_title {
+        line-height: .25;
+        font-weight:bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+
+    .intro {
+        display:flex;
+        gap:5rem;
+        align-items: center;
+        background-color: #020903e1;
+
+       }
+
+    .intro_img {
+        width: 500px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        align-self: center;
+    }
+
+    .intro_content {
+        color: #f2f2f2;
+        line-height: 1.5rem;
+        padding-right:5rem;
+    }
+
+    .logo_img {
+        display:block;
+        margin: 0px auto 2rem;
+        width: 300px;
+    }
+
+    .link_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
+    .socialmedia {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:1rem;
+        max-width: 800px;
+    }
+
+    .socialmedia img{
+        width: 100%;
+        height:auto;
+        background-color: #ffffff7e;
+    }
+
+    .home_banner {
+        width: 100%;
+        height: 600px;
+        background-image: url('img/home_banner.png');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #003435;
+    }
+
+    .margin_bottom {
+        margin-bottom: 2rem;
+    }
+
+    .margin {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    
+
+    .explore {
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin-top: -3rem;
+    }
+
+    .explore_more {
+        text-align: center;
+        color: #ffffff;
+        padding:1rem;
+        margin-bottom: 2rem;
+        background-color: #03050400;
+        border:#00343500 1px solid;
+    }
+
+    .explore_more:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #030504;
+    border:#003435 1px solid;
+    padding: 1rem;
+    border-radius: 5px;
+    }
+
+
+
+
+
+
+</style>
